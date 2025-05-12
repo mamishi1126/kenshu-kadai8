@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<h1><a href="/items">サンプルショッピング</a></h1>
+		<!--<p th:if="${@account.name}" ! = null  th:text="${@account.name}">さんがログイン中</p>-->
+		[[${@account.name}]]さんがログイン中
+		<a href="/logout">ログアウト</a>
+	</header>
+</body>
+</html>
